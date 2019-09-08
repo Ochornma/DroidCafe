@@ -8,18 +8,6 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/textintro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/textintro"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/donout"
         android:layout_width="wrap_content"
@@ -28,7 +16,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:onClick="showDonutOrder"
-        android:contentDescription="@string/donut"
+        android:contentDescription="@string/donuts"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textintro"
         app:srcCompat="@drawable/donut_circle" />
@@ -41,10 +29,22 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:onClick="showIceCreamOrder"
-        android:contentDescription="@string/ice_cream_sandwish"
+        android:contentDescription="@string/ice_cream_sandwiches"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/donout"
         app:srcCompat="@drawable/icecream_circle" />
+
+    <TextView
+        android:id="@+id/textintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/intro_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/froyo"
@@ -66,7 +66,7 @@
         android:layout_marginEnd="@dimen/margin_wide"
         android:layout_marginStart="@dimen/margin_wide"
         android:layout_marginTop="@dimen/margin_wide"
-        android:text="@string/donut"
+        android:text="@string/donuts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/donout"
         app:layout_constraintTop_toTopOf="@+id/donout" />
@@ -78,7 +78,7 @@
         android:layout_marginEnd="@dimen/margin_wide"
         android:layout_marginStart="@dimen/margin_wide"
         android:layout_marginTop="@dimen/margin_wide"
-        android:text="@string/ice_cream_sandwish"
+        android:text="@string/ice_cream_sandwiches"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ice_cream"
         app:layout_constraintTop_toTopOf="@+id/ice_cream" />
